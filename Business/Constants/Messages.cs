@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,19 +10,32 @@ namespace Business.Constants
 {
     public static class Messages
     {
-        public static string CarAdded = "Araç eklendi.";
-        public static string CarNameInvalid = "Araç adı geçersiz";
+        public static string CarAdded = "Car Added";
+        public static string CarDeleted = "Car Deleted";
+        public static string CarUpdated = "Car Updated";
+        public static string CarNameInvalid = "Invalid Car Name";
 
-        public static string ColorAdded = "Yeni renk eklendi.";
-        public static string ColorDeleted = "Renk silindi";
-        public static string ColorUpdated = "Renk bilgisi güncellendi.";
-        public static string ColorNameInvalid = "Renk adı geçersiz";
+        public static string ColorAdded = "Color Added";
+        public static string ColorDeleted = "Color Deleted";
+        public static string ColorUpdated = "Color Info Updated";
+        public static string ColorNameInvalid = "Invalid Color Name";
 
-        public static string BrandAdded = "Yeni marka eklendi";
-        public static string BrandDeleted = "Marka silindi.";
-        public static string BrandUpdated = "Marka bilgisi güncellendi.";
-        public static string BrandNameInvalid = "Marka adı geçersiz";
+        public static string BrandAdded = "Brand Added";
+        public static string BrandDeleted = "Brand Deleted";
+        public static string BrandUpdated = "Brand Info Updated";
+        public static string BrandNameInvalid = "Invalid Brand Name";
 
-        public static string AuthorizationDenied = "Yetkiniz yok";
+        public static string AuthorizationDenied = "You are not authorized";
+        public static string TokenCreated = "Token Created";
+
+        public static string UserNotFound = "User not found";
+        public static string UserExists = "User already exists";
+        public static string LoginSuccess = "Login Success";
+        public static string Registered = "Registered";
+        public static string PasswordError = "Wrong password";
+
+
+
+
     }
 }

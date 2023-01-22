@@ -50,7 +50,7 @@ namespace Business.Concrete
 
         public IResult Update(Color color)
         {
-            _colorDal.Delete(color);
+            _colorDal.Update(color);
             return new SuccessResult(Messages.ColorUpdated);
         }
     }

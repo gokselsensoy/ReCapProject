@@ -12,11 +12,11 @@ namespace Business.ValidationRules.FluentValidation
     {
         public CarValidator()
         {
-            //RuleFor(c => c.Description).Must(StartWithA).WithMessage("Ürün ismi A ile başlamalıdır.");
+            //RuleFor(c => c.Description).Must(StartWithA).WithMessage("Description need start with A");
 
-            RuleFor(c => c.Description).NotEmpty().WithMessage("boş");
-            RuleFor(c => c.Description).MinimumLength(2).WithMessage("en az 2");
-            RuleFor(c => c.DailyPrice).GreaterThan(50).WithMessage("50 den küçük");
+            RuleFor(c => c.Description).NotEmpty().WithMessage("Descripton can not empty");
+            RuleFor(c => c.Description).MinimumLength(2).WithMessage("Description Minimum Lengt = 2");
+            RuleFor(c => c.DailyPrice).GreaterThan(50).WithMessage("Daily Price>50");
             //RuleFor(c => c.ModelYear).Length(4).WithMessage("model");
         }
 
