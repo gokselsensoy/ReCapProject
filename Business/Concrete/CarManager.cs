@@ -85,7 +85,7 @@ namespace Business.Concrete
         {
             _carDal.Update(car);
             _carDal.Add(car);
-            return new SuccessResult(Messages.CarDeleted);
+            return new SuccessResult(Messages.CarUpdated);
         }
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()
